@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration>
+
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <!-- Uncomment to see web request logging from Spring -->
+    <!--<logger name="org.springframework.web" level="DEBUG"/>-->
+
+    <!-- Uncomment to see SQL query logging -->
+    <!--<logger name="io.r2dbc.postgresql.QUERY" level="DEBUG"/>-->
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

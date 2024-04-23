@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: swarm-interview
+  flyway:
+    default-schema: swarm
+    locations: classpath:db/migration/common
