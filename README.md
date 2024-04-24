@@ -29,7 +29,7 @@ Please see the [Testcontainers documentation](https://java.testcontainers.org/su
 ## Project structure
 
 * `gradle/libs.versions.toml` - a Gradle [version catalog](https://docs.gradle.org/current/userguide/platforms.html#sub:conventional-dependencies-toml) declaring the project dependencies
-* `app` - the project folder for the interview exercise app, a Spring Boot microservice written in Kotlin
+* `src` - the source folder for the interview exercise app, a Spring Boot microservice written in Kotlin
 
 ## Common build tasks
 
