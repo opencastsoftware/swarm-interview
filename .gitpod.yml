@@ -7,3 +7,8 @@ ports:
   - name: Swarm Interview App
     description: The HTTP port of the Swarm Interview App
     port: 8081
+
+jetbrains:
+  intellij:
+    prebuilds:
+      version: stable
