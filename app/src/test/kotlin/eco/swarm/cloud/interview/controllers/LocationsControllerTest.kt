@@ -21,6 +21,7 @@ import java.util.*
 class LocationsControllerTest : WordSpec() {
   @Autowired
   private lateinit var webClient: WebTestClient
+
   @Autowired
   private lateinit var objectMapper: ObjectMapper
 
@@ -32,6 +33,29 @@ class LocationsControllerTest : WordSpec() {
       "GET /locations is called with an empty database" should {
         "return Ok with an empty list of locations" {
           val locations = emptyList<Location>()
+
+          every { locationsRepository.getLocations() } returns locations.asFlow()
+
+          webClient.get()
+            .uri("/locations")
+            .exchange()
+            .expectStatus()
+            .is2xxSuccessful
+            .expectHeader()
+            .contentType(MediaType.APPLICATION_JSON)
+            .expectBody()
+            .json(objectMapper.writeValueAsString(locations))
+        }
+      }
+
+      "GET /locations is called with a populated database" should {
+        "return Ok with a list of locations" {
+          val locations = listOf(
+            Location(LocationId(UUID.randomUUID()), "Laura's House"),
+            Location(LocationId(UUID.randomUUID()), "Gabriel's House"),
+            Location(LocationId(UUID.randomUUID()), "Husain's House"),
+            Location(LocationId(UUID.randomUUID()), "Chen's House"),
+          )
 
           every { locationsRepository.getLocations() } returns locations.asFlow()
 
@@ -61,6 +85,37 @@ class LocationsControllerTest : WordSpec() {
             .isNotFound
             .expectBody()
             .json(objectMapper.writeValueAsString(notFoundError))
+        }
+      }
+
+      "GET /locations/<id> is called with a valid ID that matches a location" should {
+        "return Ok with the location" {
+          val locationId = LocationId(UUID.randomUUID())
+          val location = Location(locationId, "Laura's House")
+
+          coEvery { locationsRepository.getLocationById(locationId) } returns location
+
+          webClient.get()
+            .uri("/locations/${locationId.value}")
+            .exchange()
+            .expectStatus()
+            .is2xxSuccessful
+            .expectBody()
+            .json(objectMapper.writeValueAsString(location))
+        }
+      }
+
+      "GET /locations/<id> is called with an invalid ID" should {
+        "return Bad Request" {
+          val badRequestError = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST)
+
+          webClient.get()
+            .uri("/locations/bla")
+            .exchange()
+            .expectStatus()
+            .is4xxClientError
+            .expectBody()
+            .json(objectMapper.writeValueAsString(badRequestError))
         }
       }
     }
