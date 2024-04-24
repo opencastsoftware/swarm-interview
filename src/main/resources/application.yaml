@@ -4,3 +4,5 @@ spring:
   flyway:
     default-schema: swarm
     locations: classpath:db/migration/common
+  profiles:
+    default: local
