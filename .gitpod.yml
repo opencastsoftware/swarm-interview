@@ -1,0 +1,9 @@
+image: gitpod/workspace-java-17:2024-04-24-09-57-43
+
+tasks:
+  - init: ./gradlew build
+
+ports:
+  - name: Swarm Interview App
+    description: The HTTP port of the Swarm Interview App
+    port: 8081
