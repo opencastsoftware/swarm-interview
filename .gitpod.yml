@@ -11,6 +11,3 @@ ports:
 jetbrains:
   plugins:
     - kotest-plugin-intellij
-  intellij:
-    prebuilds:
-      version: stable
