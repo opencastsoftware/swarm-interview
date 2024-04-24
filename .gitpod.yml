@@ -9,6 +9,8 @@ ports:
     port: 8081
 
 jetbrains:
+  plugins:
+    - kotest-plugin-intellij
   intellij:
     prebuilds:
       version: stable
