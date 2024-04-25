@@ -12,7 +12,13 @@ The exercises can be found [here](./EXERCISES.md).
 
 We've tried to make sure that it's as easy as possible to set up this repository.
 
-We offer several options, from easiest to most difficult:
+For the best IDE experience, we strongly recommend that you use [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/) while editing this project.
+
+This is because Kotlin support in other editors is much less reliable and comprehensive.
+
+The built-in plugins should be sufficient to use the workspace, but we recommend that you install the [Kotest plugin](https://kotest.io/docs/intellij/intellij-plugin.html) as this will enable you to easily run tests from your IDE.
+
+We'd suggest using one of the following setup options, from easiest to most difficult:
 
 ### 1. Set up via Gitpod
 
@@ -32,13 +38,9 @@ If you're using [IntelliJ](https://www.jetbrains.com/idea/) you can start a [Dev
 
 Please see the [IntelliJ documentation](https://www.jetbrains.com/help/idea/connect-to-devcontainer.html), which describes their Dev Container support.
 
-### 3. Manually
+### 3. Set up manually
 
 To set up manually, you'll need to install the following things:
-
-#### IntelliJ IDEA
-
-We strongly recommend that you use [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/) for the best experience when editing this project.
 
 #### Java JDK
 
@@ -110,4 +112,4 @@ Tests are written using a Kotlin test framework called [Kotest](https://kotest.i
 
 Quick start documentation for Kotest can be found [here](https://kotest.io/docs/quickstart).
 
-If you are using IntelliJ as your IDE, we recommend that you install the [Kotest Plugin](https://kotest.io/docs/intellij/intellij-plugin.html).
+If you are using IntelliJ as your IDE, we recommend that you install the [Kotest plugin](https://kotest.io/docs/intellij/intellij-plugin.html).
