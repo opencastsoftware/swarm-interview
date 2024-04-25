@@ -1,10 +1,5 @@
 .gradle/
-.idea/
-.settings/
-.vscode/
 bin/
 build/
 .DS_Store
-.classpath
-.project
 *.class
