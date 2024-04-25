@@ -24,7 +24,7 @@ We'd suggest using one of the following setup options, from easiest to most diff
 
 This option requires the least setup, as it opens a remote workspace with all of the required dependencies already configured.
 
-First, install [JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/), and connect to [Gitpod](https://gitpod.io).
+First, install [JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/), and [connect to Gitpod](https://www.jetbrains.com/help/idea/remote-development-a.html#gitpod_integration).
 
 Next, use [this workspace snapshot link]() to connect to the workspace.
 
