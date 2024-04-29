@@ -14,10 +14,11 @@ The key thing is that you can explain the changes you have made, and can discuss
 
 ## Exercises
 
-Please pick one to two of the following tasks to complete:
+Please complete as many of the following tasks as you are able to given your time constraints:
 
-* Add a new endpoint to the app to enable callers to create a location.
 * Add a `postcode` field to the `locations` table and make this new field available via the existing endpoints.
-* Add a component to the app which is capable of using the public [Postcodes.io](http://postcodes.io/) API to resolve the latitude and longitude of a postcode. It's not important that this component is used by the API.
+* Add a component to the app which is capable of using the public [Postcodes.io](http://postcodes.io/) API to resolve the latitude and longitude of a postcode.
+* Add a new endpoint to the app to enable callers to create a location.
+* Add `latitude` and `longitude` to the `locations` table, and use the latitude / longitude lookup component to save the latitude and longitude to the database when creating a location.
 
 We'd like to see your approach to testing, so if your task involves adding new functionality, please add new tests, and if it involves updating existing functionality, please update the existing tests accordingly.
