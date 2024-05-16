@@ -1,12 +1,12 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:1-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/base:1-bookworm@sha256:f4860362e59f0e1bb7d5a08486e528f29f617cfc5987e54613e6df20b436ff36",
   "features": {
-    "ghcr.io/devcontainers/features/java:1": {
+    "ghcr.io/devcontainers/features/java:1@sha256:5f3ec36d8accba9f48f5b37f8df6555fe1d62f2561f10eeb3641c1aa808a91cd": {
       "version": "17",
       "jdkDistro": "tem",
       "installGradle": "true",
       "gradleVersion": "8.7"
     },
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2@sha256:503f23cd692325b3cbb8c20a0ecfabb3444b0c786b363e0c82572bd7d71dc099": {}
   }
 }
