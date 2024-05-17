@@ -30,7 +30,7 @@ Next, use [this workspace link](https://gitpod.io/new#https://github.com/opencas
 
 The workspace should open in IntelliJ. You will need to give IntelliJ some time to index dependencies - the downside of remote workspaces is that they can be a little slow!
 
-### 2. Set up via Development Containers
+### 2. Set up via Development Containers (IntelliJ Ultimate only)
 
 This option requires that you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed for the best experience. We have had mixed results with other container runtimes like Colima and Podman.
 
