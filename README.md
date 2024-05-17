@@ -26,7 +26,7 @@ This option requires the least setup, as it opens a remote workspace with all of
 
 First, install [JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/), and [connect to Gitpod](https://www.jetbrains.com/help/idea/remote-development-a.html#gitpod_integration).
 
-Next, use [this workspace snapshot link]() to connect to the workspace.
+Next, use [this workspace link](https://gitpod.io/new#https://github.com/opencastsoftware/swarm-interview) to connect to the workspace.
 
 The workspace should open in IntelliJ. You will need to give IntelliJ some time to index dependencies - the downside of remote workspaces is that they can be a little slow!
 
