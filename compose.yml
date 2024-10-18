@@ -2,7 +2,7 @@ version: "3"
 
 services:
   postgres:
-    image: postgres:16.2@sha256:4aea012537edfad80f98d870a36e6b90b4c09b27be7f4b4759d72db863baeebb
+    image: postgres:16.4@sha256:91f464e7ba0ad91a106c94cff079fb4384139291b8c0502fd36989cf2c788bbb
     ports:
       - "5432:5432"
     environment:
