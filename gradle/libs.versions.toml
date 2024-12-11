@@ -1,5 +1,5 @@
 [versions]
-jooq = "3.19.7"
+jooq = "3.19.16"
 junit = "5.10.2"
 kotlin = "1.9.25"
 kotlinCoroutines = "1.8.0"
