@@ -12,7 +12,7 @@ reactorTest = "3.7.1"
 springBoot = "3.2.4"
 springMockk = "4.0.2"
 testcontainers = "1.20.4"
-wiremock = "3.5.3"
+wiremock = "3.10.0"
 
 [libraries]
 # Assorted
