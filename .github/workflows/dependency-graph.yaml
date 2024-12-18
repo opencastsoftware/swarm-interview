@@ -28,7 +28,7 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
 
       - name: Generate and submit dependency graph
-        uses: gradle/actions/dependency-submission@db19848a5fa7950289d3668fb053140cf3028d43 # v3
+        uses: gradle/actions/dependency-submission@0bdd871935719febd78681f197cd39af5b6e16a6 # v4
         env:
           DEPENDENCY_GRAPH_EXCLUDE_PROJECTS: ":build-logic"
           DEPENDENCY_GRAPH_INCLUDE_CONFIGURATIONS: "compileClasspath|runtimeClasspath"
