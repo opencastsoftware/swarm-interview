@@ -1,5 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:1-bookworm@sha256:f4860362e59f0e1bb7d5a08486e528f29f617cfc5987e54613e6df20b436ff36",
+  "image": "mcr.microsoft.com/devcontainers/base:1-bookworm@sha256:577ed426ea0beda5fe12f135ca9355e95adc1ab2cede18d11e4ec583d877da81",
   "features": {
     "ghcr.io/devcontainers/features/java:1@sha256:5f3ec36d8accba9f48f5b37f8df6555fe1d62f2561f10eeb3641c1aa808a91cd": {
       "version": "17",
